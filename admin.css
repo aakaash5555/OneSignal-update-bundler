@@ -1,0 +1,14 @@
+.ub3-wrap { max-width: 1280px; }
+.ub3-grid { display:grid; gap:16px; grid-template-columns:repeat(4,minmax(0,1fr)); margin:20px 0; }
+.ub3-card, .ub3-panel { border:1px solid var(--ub3-border, #c3c4c7); background:transparent; border-radius:4px; }
+.ub3-card { padding:18px; }
+.ub3-card span { display:block; opacity:.78; margin-bottom:8px; }
+.ub3-card strong { display:block; font-size:26px; line-height:1.2; }
+.ub3-panel { padding:20px; margin-top:20px; }
+.ub3-panel > h2:first-child { margin-top:0; }
+.ub3-actions { display:flex; flex-wrap:wrap; gap:8px; }
+.ub3-heading-row { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.ub3-table-wrap { overflow-x:auto; }
+.ub3-check { display:inline-block; margin:0 18px 8px 0; }
+@media (max-width:1000px){ .ub3-grid{grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media (max-width:600px){ .ub3-grid{grid-template-columns:1fr;} .ub3-heading-row{align-items:flex-start; flex-direction:column;} }
